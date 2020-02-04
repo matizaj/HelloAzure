@@ -23,5 +23,10 @@ namespace HelloAzure.Controllers
             var model = configuration["Greeting"];
             return View(nameof(Index), model);
         }
+
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("Sorry feature in not implemented");
+        }
     }
 }
